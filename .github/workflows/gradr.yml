@@ -46,7 +46,7 @@ jobs:
         cd audits
         yarn audit-ch-2
 
-    - name: Review Challenge - 3
+    - name: Review Challenge - 4
       if: always()
       run: |
         cd audits
@@ -54,7 +54,7 @@ jobs:
 
     - name: Report Audits
       if: always()
-      uses: exam-01-practice/jest-to-sheets@v2
+      uses: exam-02-practice/jest-to-sheets@v2
       with:
         challenge: 'ch-1;ch-2;ch-3'
         lang: javascript
